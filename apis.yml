@@ -1,8 +1,25 @@
 aid: solace-health
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/solace-health.png
 name: Solace Health
-description: 'Solace Health is a company surfaced as a portfolio company of ivp and added to the API Evangelist
-  network as a stub for enrichment. Sector: healthcare. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Solace Health (solace.health) is a US healthcare navigation and patient-advocacy
+  platform that matches patients and family caregivers with dedicated advocates, many
+  covered by insurance, to handle administrative tasks, coordinate care and referrals,
+  and fight for approvals and treatments. Advocates support members by video, phone,
+  text, and email nationwide across a range of insurance plans, with a member app at
+  app.solace.health. The company is venture-backed (IVP among its investors). As of
+  this enrichment pass, Solace publishes a patient-facing service only and exposes no
+  public developer API, API documentation, or developer portal.'
 url: https://raw.githubusercontent.com/api-evangelist/solace-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Healthcare
+- Patient Advocacy
+- Health Navigation
+- Caregiving
+- Insurance
+- Telehealth
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +45,24 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/solace-health-domain-security.yml
 - type: Website
   url: https://www.solace.health
+- type: About
+  url: https://www.solace.health/about
+- type: Blog
+  url: https://www.solace.health/blog
+- type: Support
+  url: https://www.solace.health/contact-us
+- type: Login
+  url: https://app.solace.health/login
+- type: PrivacyPolicy
+  url: https://app.solace.health/privacy-policy
+- type: TermsOfService
+  url: https://app.solace.health/terms-of-service
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
